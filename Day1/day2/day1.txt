@@ -1,0 +1,74 @@
+r = int(input("Enter radius: "))
+area = 3.14*r*r
+c = 2*3.14*r
+print("Area:",area)
+print("Circumference:", c)
+
+a = int(input("Enetr length of cube: "))
+print("Volume: ",a*a*a)
+
+h = int(input("Enetr height: "))
+r = int(input("Enter radius: "))
+print("Volume : ", 3.14*r*r*h)
+
+cno = int(input("Enter consumer number: "))
+cname = input("Enter consumer name: ")
+pr = int(input("Enter present month reading: "))
+lr = int(input("Enter last month redaing: "))
+cost = float(input("Enter cost per unit: "))
+bill = cost*(pr-lr)
+print("Consumer number: ", cno)
+print("Consumer name: ", cname)
+print("Current Bill: ",bill)
+
+def daysToYears(d):
+    y = d//365
+    d = d%365
+    m = d//30
+    print(y,"years &",m,"months")
+daysToYears(87653)
+
+def kmToMiles(a):
+    print(0.62*a)
+kmToMiles(1)
+kmToMiles(17)
+
+l = int(input("Enter length: "))
+b = int(input("Enter breadth: "))
+area = l*b
+p = 2*(l+b)
+print("Area:",area)
+print("Perimeter:", p)
+
+def greet(str):
+    return "Hello "+str+"!"
+print(greet("Raj"))
+
+p = int(input("Enter principle: "))
+r = int(input("Enter rate of interest: "))
+t = int(input("Enter no.of months: "))
+print("Simple Interest: ",(p*r*t)/100)
+print("Total: ", p+(p*r*t)/100)
+
+sno = int(input("Enter Student number: "))
+sname = input("Enter Student name: ")
+marks = list(map(int, input("Enter marks: ").split()))
+total = 0
+for i in marks:
+    total+=i
+avg = total/3
+round(avg, 2)
+print("total: ",total)
+print("Average: ", avg)
+
+a = 10
+b = 20
+print("Before Swapping:")
+print("a:",a)
+print("b:",b)
+a = a+b
+b = a-b
+a = a-b
+print("After Swapping:")
+print("a:",a)
+print("b:",b)

@@ -1,5 +1,0 @@
-p = int(input("Enter principle: "))
-r = int(input("Enter rate of interest: "))
-t = int(input("Enter no.of months: "))
-print("Simple Interest: ",(p*r*t)/100)
-print("Total: ", p+(p*r*t)/100)
