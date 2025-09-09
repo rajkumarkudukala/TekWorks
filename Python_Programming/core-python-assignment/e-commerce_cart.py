@@ -1,15 +1,16 @@
 def total(items):
     sum = 0
     if(len(items) == 0):
-        print("Empty Cart!") #cart has 0 items
+        print("Empty Cart!")
     elif len(items) > 5:
         for i in items:
             sum+=items[i]
-        sum-=sum*10/100 #10% discount if cart has more than 5 items
+        sum-=sum*10/100
     else:
         for i in items:
-            sum+=items[i] #No discount if cart has less than or equal to 5 items
+            sum+=items[i]
     return sum
+
 items = {}
 num_entries = int(input("Enter the number of items in the cart: "))
 
